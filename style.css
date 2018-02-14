@@ -1,0 +1,218 @@
+/* Police d'écriture générale */
+
+@font-face {
+    font-family: 'Museo_Slab_500_2';
+    src: url('fonts/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+    url('fonts/Museo_Slab_500_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Museo_Slab_500_2
+}
+
+/* Flexbox zone */
+
+body {
+    display: flex;
+    align-items: stretch
+}
+
+#blocpage {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    background: url(fonts/onde.jpg) no-repeat left;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-around
+}
+
+#sidebar {
+    display: flex;
+    width: 200px;
+    height: 747.25px;
+    position: relative;
+    float: left;
+    overflow: autoheight: 100%;
+    /* 100% Full-height */
+    background-image: url(images/e=mc2.png);
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    border: 3px white ridge;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#sidebar nav a {
+    color: white;
+    flex-direction: column;
+}
+
+#sidebar nav {
+    background-color: rgba(95, 102, 105, 0.9);
+    border-radius: 10px / 10px;
+    width: 160px;
+    height: 170px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 0, 6em;
+    text-align: center;
+    margin-left: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Police et mise en page */
+
+.text {
+    background-color: rgba(95, 102, 105, 0.5);
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px / 10px;
+    margin-right: 15px;
+    text-align: justify;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+    color: black;
+    border: 3px red ridge;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;
+    text-shadow: 2px 2px 5px antiquewhite;
+}
+
+h3 {
+    font-style: italic;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px antiquewhite;
+}
+
+.flottant {
+    float: left
+}
+
+a {
+    color: blue
+}
+
+a:visited {
+    color: chocolate
+}
+
+a:hover {
+    color: green;
+    font-weight: bold
+}
+
+a:active {
+    text-decoration: underline;
+    color: blueviolet;
+    font-style: italic
+}
+
+/* Header */
+
+figure {
+
+    text-align: right;
+
+    display: block;
+
+    margin: auto;
+
+}
+
+figcaption {
+    text-align: center
+}
+
+#photo {
+    width: 200px;
+    height: 150px;
+    border: 3px white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.profession {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: antiquewhite;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 5px darkblue;
+}
+
+.myname {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: fantasy;
+    text-align: center;
+    color: antiquewhite;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 5px darkblue;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+
+    #sidebar {
+        display: none;
+    }
+    #site-header {
+        justify-content: center;
+    }
+
+    #atome {
+        display: none;
+    }
+    #photo {
+        width: 100px;
+        height: 75px;
+        border: 5px white;
+        box-shadow: 2px 2px 2px black;
+        margin-left: 10px;
+
+    }
+    section {
+        flex-direction: column;
+        justify-content: center;
+        flex: center;
+        align-items: center;
+    }
+    .profession {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 21px;
+        color: antiquewhite;
+        text-decoration-line: underline;
+        text-shadow: 1px 1px 5px darkblue;
+    }
+    section article {
+        margin-bottom: 15px;
+    }
+    .myname {
+        font-weight: 900;
+        font-size: 40px;
+        font-family: fantasy;
+        text-align: center;
+        color: antiquewhite;
+        text-decoration-line: underline;
+        text-shadow: 1px 1px 5px darkblue;
+    }
+}
