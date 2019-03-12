@@ -1,2 +1,2 @@
 # CV_Einstein
-Ma première page Html, exercice a réaliser pour Openclassrooms.
+Ma première page Html de GROS débutant
